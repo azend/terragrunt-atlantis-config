@@ -779,7 +779,7 @@ func main(cmd *cobra.Command, args []string) error {
 			}
 
 			if err := errGroup.Wait(); err != nil {
-				return err
+				// return err
 			}
 		}
 		if len(projectHclDirs) > 0 && workingDir != gitRoot {
@@ -810,7 +810,7 @@ func main(cmd *cobra.Command, args []string) error {
 			})
 
 			if err := errGroup.Wait(); err != nil {
-				return err
+				// return err
 			}
 		}
 	}
